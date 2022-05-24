@@ -1,0 +1,41 @@
+
+const Footer = () => {
+  return (
+    <footer className="footer pt-3 bg-warning">
+          <div className="container-fluid">
+            <div className="row align-items-center justify-content-lg-between">
+              <div className="col-lg-6 mb-lg-0 mb-4">
+                <div className="copyright text-center text-sm text-muted text-lg-start">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , made by
+                  <a href="" className="font-weight-bold">Yakut Ahmedin</a>
+                  for NuCamp bootstrap portfolio project.
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <ul className="nav nav-footer justify-content-center justify-content-lg-end">
+                  <li className="nav-item">
+                    <a href="#" className="nav-link text-muted">Creative
+                      Projects</a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link text-muted">About</a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link text-muted">Blog</a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link pe-0 text-muted">License</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+  )
+}
+
+export default Footer;
