@@ -12,6 +12,8 @@ function Dashboard() {
         <Header />
         <Footer />
         <Footer />
+        <Footer />
+        <Footer />
       </div>
     </div>
   );
