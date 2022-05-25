@@ -1,5 +1,6 @@
 import Bird from "../../../app/assets/images/bird.png"
 import webapp from "../../../app/assets/images/webapp.png"
+import "./Sidenav.css";
 
 const SideNav = () => {
   return (

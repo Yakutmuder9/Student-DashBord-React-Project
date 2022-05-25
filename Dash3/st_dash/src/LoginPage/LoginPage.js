@@ -7,7 +7,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import "./login.css";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import Dashboard from "../Dashboard";
+import Dashboard from "../Dashboard/Dashboard";
 
 const LoginPage = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);

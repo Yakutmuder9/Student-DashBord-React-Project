@@ -2,13 +2,13 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from "./LoginPage/LoginPage";
 import ErrorPage from "./ErrorPage/ErrorPage";
-import Dashboard from "./Dashboard/index"
+import Dashboard from "./Dashboard/Dashboard"
 import HomePage from "./HomePage/HomePage";
 
 function App() {
   return (
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+        <Route  path="/" element={<HomePage />} />
         <Route path="/dashboard" element={
           <Dashboard />
         }/>
