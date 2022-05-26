@@ -12,8 +12,16 @@ function Dashboard() {
           <SideNav/>
         </div>
 
-        <div className="col bg-secondary" id="rightSide">
-          <h1>Hey</h1>
+        <div className="col ps-3 pe-3" id="rightSide">
+            <Header />
+            <div className="dhashboardConatainer w-100 h-100 bg-primary">
+              <div className="courses "></div>
+              <div className="promotions"></div>
+              <div className="graphs"></div>
+              <div className="ProjectOverview"></div>
+              <div className="courses"></div>
+            </div>
+            <Footer />
         </div>
 
     

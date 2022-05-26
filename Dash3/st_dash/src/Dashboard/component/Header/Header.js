@@ -1,10 +1,9 @@
-
 const Header = () => {
   return (
-    <header className="sticky-top">
-        <nav className="navbar navbar-main navbar-expand-lg  bg-dark " id="navbar_top">
-          <div className=" w-100 py-1 px-3 d-flex justify-content-between">
-
+    <header className="py-4">
+        <div className=" navbar navbar-main  navbar-expand-lg sticky-top  bg-dark" id="navbar_top">
+          <div className="col sticky-top py-1 px-3 d-flex justify-content-between">
+          
 
             <nav className="navbar navbar-light d-block .d-sm-none d-lg-none">
               <a className="navbar-brand" href="#"></a>
@@ -17,14 +16,14 @@ const Header = () => {
               <div className="collapse navbar-collapse p-3 " id="navbarTogglerDemo02">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li className="nav-item active">
-                    <a className="nav-link text-white text-bold" href="index.html">Dashboard<span
+                    <a className="nav-link text-white text-bold" href="/dashboard">Dashboard<span
                         className="sr-only">(current)</span></a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-secondary" href="course.html">Courses</a>
+                    <a className="nav-link text-secondary" href="/dashboard">Courses</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-secondary" href="event.html">Event</a>
+                    <a className="nav-link text-secondary" href="">Event</a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link text-secondary" href="inbox.html">Inbox</a>
@@ -42,7 +41,7 @@ const Header = () => {
                 </form>
               </div>
             </nav>
-
+           
             <div aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                 <li className="breadcrumb-item text-sm">
@@ -67,7 +66,7 @@ const Header = () => {
                 <li className="nav-item d-flex align-items-center">
                   <a href="" className="nav-link text-body  font-weight-bold px-2 p-1 ml-2 btn btn-outline-primary">
                     <i className="fa fa-user text-white pe-1" title="Edit"></i>
-                    <span className="d-sm-inline d-none text-white">Sign In</span>
+                    <span className="d-sm-inline d-none text-white">Sign In </span>
                   </a>
                 </li>
 
@@ -90,7 +89,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
-        </nav>
+        </div>
     </header>
   )
 }
