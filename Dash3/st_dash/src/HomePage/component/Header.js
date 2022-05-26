@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import LoginPage from "../../LoginPage/LoginPage";
-import '../../LoginPage/login.css'
+import LoginPage from "../../LoginModal/LoginModal";
+import '../../LoginModal/login.css'
 import {
   Button,
   Modal,
@@ -55,7 +55,7 @@ const Navbar = () => {
       <Modal
         fullscreen
         isOpen={modalOpen}
-        className="shadow p-md-5 p-sm-3 bg-dark rounded"
+        className="shadow p-md-5 p-sm-3 rounded" id="modaloverLay"
       >
         <ModalHeader toggle={() => setModalOpen(false)}>
           Add Comment

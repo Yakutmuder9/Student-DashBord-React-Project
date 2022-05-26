@@ -86,6 +86,10 @@ nav button {
   cursor: pointer;
 }
 
+#modaloverLay{
+  background-color: #0092899c;
+}
+
 /*------Home page--------------  -*/
 .home {
   width: 100vw;
