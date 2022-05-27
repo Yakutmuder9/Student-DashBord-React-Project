@@ -1,13 +1,13 @@
 import { useState } from "react";
-import user from "../app/assets/images/user.svg";
-import login from "../app/assets/images/login.svg";
-import cool from "../app/assets/images/cool.svg";
-import un from "../app/assets/images/un.png";
+import user from "../../app/assets/images/user.svg";
+import login from "../../app/assets/images/login.svg";
+import cool from "../../app/assets/images/cool.svg";
+import un from "../../app/assets/images/un.png";
 import { useParams, useNavigate } from "react-router-dom";
 
 import "./login.css";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import Dashboard from "../Dashboard/Dashboard";
+import Dashboard from "../../Dashboard/Dashboard";
 
 const LoginPage = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);

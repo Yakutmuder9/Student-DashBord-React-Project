@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import LoginPage from "../../LoginModal/LoginModal";
-import '../../LoginModal/login.css'
+import LoginPage from "../LoginModal/LoginModal";
+import '../LoginModal/login.css'
 import {
   Button,
   Modal,

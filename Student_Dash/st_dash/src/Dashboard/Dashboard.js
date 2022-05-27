@@ -13,18 +13,21 @@ import Resources from "./Pages/Resource_page/Resources";
 import Profile from "./Pages/Profile_page/Profile";
 import Help from "./Pages/Help/Help";
 
-
-const Dashboard = () => {
+const Dashboard = ({authorised}) => {
   // const [component, setComponent] = useState(
   //   {sideNavetogler.slice(0,1).toUpperCase() + sideNavetogler.slice(1, sideNavetogler.length)}
   // )
   let navigat = useNavigate();
-  let {sideNavetogler} = useParams();
+  let { sideNavetogler } = useParams();
 
-// function componentFirstletter(){
-//   sideNavetogler.slice(0,1).toUpperCase() + sideNavetogler.slice(1, sideNavetogler.length)
-//   console.log(sideNavetogler)
-// }
+  if(!authorised){
+    return <Help />
+  }
+
+  // function componentFirstletter(){
+  //   sideNavetogler.slice(0,1).toUpperCase() + sideNavetogler.slice(1, sideNavetogler.length)
+  //   console.log(sideNavetogler)
+  // }
   // const routes = [
   //   {
   //     path: "/",
@@ -59,16 +62,27 @@ const Dashboard = () => {
 
   return (
     <div className="Dash d-flex">
-      <div className="bg-dark d-none d-xl-block" id="LeftSide">
+      <div className="d-none d-xl-block" id="LeftSide">
         <SideNav />
       </div>
+
       <div className="col ps-3 pe-3" id="rightSide">
         <Header />
 
         {/* --------Start the main dody component that rerendered in every routes --------*/}
         <div className="dhashboardConatainer w-100 h-100 bg-primary">
-          <><Activity />
-          {/* {(sideNavetogler.slice(0,1).toUpperCase() + sideNavetogler.slice(1, sideNavetogler.length)) ? <Activity/>:<Course />} */}
+          <>
+          <Routes>
+             <Route path="activity" element={<Activity />} />
+             <Route path="courses" element={<Course />} />
+            <Route path="event" element={<Event />} />
+            <Route path="inbox" element={<Inbox />} />
+            <Route path="resources" element={<Resources />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="help" element={<Help />} />
+          </Routes>
+         
+            {/* {(sideNavetogler.slice(0,1).toUpperCase() + sideNavetogler.slice(1, sideNavetogler.length)) ? <Activity/>:<Course />} */}
           </>
         </div>
         {/* --------End the main dody component that rerendered in every routes --------*/}
@@ -77,6 +91,6 @@ const Dashboard = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Dashboard;
