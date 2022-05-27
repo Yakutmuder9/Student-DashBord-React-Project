@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-
 import "./App.css";
 
 function App() {
-  // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // User Login info
+  
   const database = [
     {
       username: "user1",
@@ -26,9 +24,7 @@ function App() {
   };
 
   const handleSubmit = (event) => {
-    //Prevent page reload
     event.preventDefault();
-
     var { uname, pass } = document.forms[0];
 
     // Find user login info
